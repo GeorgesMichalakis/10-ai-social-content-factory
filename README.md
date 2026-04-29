@@ -8,6 +8,29 @@ Publish more consistently while keeping brand voice and approvals under control.
 
 This is a deployable portfolio demo for Creators, agencies, coaches, and B2B teams. It shows a complete AI automation workflow: intake, deterministic scoring, AI-assisted drafting, human approval, and mock publishing to common business systems.
 
+## Before / What We Provide / After
+
+### Before
+
+- Content briefs arrive from LinkedIn, Instagram, X and are reviewed one by one.
+- The team copies details between tools, decides priority manually, and writes repetitive notes or replies from scratch.
+- High-value or risky content briefs can sit in the same queue as low-value work, so follow-up quality depends on who notices first.
+
+### What We Provide
+
+- A deployable React and Express workflow app tailored to Creators, agencies, coaches, and B2B teams.
+- An AI scoring and routing engine for content briefs, with deterministic fallback mode and optional live OpenAI Responses API review.
+- Human-in-loop approval screens, generated drafts, audit-friendly timeline, and mock adapters for LinkedIn, Instagram, X, Buffer, Airtable, Zapier.
+- Production-ready handoff assets: Dockerfile, Render config, environment template, tests, and integration payload examples.
+
+### After
+
+- Content briefs are classified, scored, routed to Ready to schedule, and prepared for review in seconds.
+- The operator receives draft outputs, next-best actions, and integration payloads before anything is sent externally.
+- Approved work is pushed to LinkedIn and Instagram, keeping the source workflow and downstream records aligned.
+
+See [BEFORE_AFTER_DEMO.md](./BEFORE_AFTER_DEMO.md) for a client-ready walkthrough script.
+
 ## Demo Features
 
 - React operations dashboard for content briefs

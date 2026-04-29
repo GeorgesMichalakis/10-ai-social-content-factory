@@ -144,10 +144,11 @@ button:disabled {
   display: grid;
   grid-template-columns: repeat(5, minmax(120px, 1fr));
   gap: 12px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .kpi-card,
+.story-card,
 .queue,
 .detail-panel,
 .output-panel {
@@ -180,6 +181,49 @@ button:disabled {
 .timeline small,
 .delivery small {
   color: #64748b;
+}
+
+.demo-story-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.story-card {
+  padding: 16px;
+  min-height: 220px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.story-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.story-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #334155;
+  line-height: 1.48;
+}
+
+.story-card li {
+  margin-bottom: 8px;
+}
+
+.story-card.before {
+  border-left: 4px solid #ef4444;
+}
+
+.story-card.provide {
+  border-left: 4px solid var(--accent);
+}
+
+.story-card.after {
+  border-left: 4px solid #22c55e;
 }
 
 .content-grid {
@@ -377,6 +421,10 @@ pre {
   .kpi-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .demo-story-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 680px) {
@@ -392,6 +440,7 @@ pre {
   }
 
   .kpi-grid,
+  .demo-story-grid,
   .analysis-strip,
   .split {
     grid-template-columns: 1fr;

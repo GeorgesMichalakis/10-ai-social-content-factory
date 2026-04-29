@@ -20,6 +20,17 @@ export type CategoryRule = {
   boost: number;
 };
 
+export type DemoNarrative = {
+  beforeTitle: string;
+  beforeState: string[];
+  whatWeProvide: string[];
+  afterTitle: string;
+  afterState: string[];
+  demoFlow: string[];
+  successMetrics: string[];
+  clientOffer: string;
+};
+
 export type DomainConfig = {
   slug: string;
   title: string;
@@ -38,6 +49,7 @@ export type DomainConfig = {
   riskKeywords: string[];
   outputLabels: string[];
   sampleItems: WorkItem[];
+  demo: DemoNarrative;
 };
 
 export type AutomationRun = {

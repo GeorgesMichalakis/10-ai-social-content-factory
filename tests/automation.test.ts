@@ -18,6 +18,8 @@ describe("AI Social Content Factory", () => {
 
     expect(dashboard.runs).toHaveLength(domainConfig.sampleItems.length);
     expect(dashboard.kpis[0].value).toBe(String(domainConfig.sampleItems.length));
+    expect(domainConfig.demo.beforeState.length).toBeGreaterThan(0);
+    expect(domainConfig.demo.afterState.length).toBeGreaterThan(0);
   });
 
   it("creates mock integration delivery payloads", () => {

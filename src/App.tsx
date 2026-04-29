@@ -97,6 +97,30 @@ export default function App() {
           ))}
         </section>
 
+        <section className="demo-story-grid" aria-label="Before and after demo story">
+          <article className="story-card before">
+            <p className="eyebrow">Before</p>
+            <h3>{domainConfig.demo.beforeTitle}</h3>
+            <ul>
+              {domainConfig.demo.beforeState.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </article>
+          <article className="story-card provide">
+            <p className="eyebrow">What we provide</p>
+            <h3>Deployable automation system</h3>
+            <ul>
+              {domainConfig.demo.whatWeProvide.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </article>
+          <article className="story-card after">
+            <p className="eyebrow">After</p>
+            <h3>{domainConfig.demo.afterTitle}</h3>
+            <ul>
+              {domainConfig.demo.afterState.map((item) => <li key={item}>{item}</li>)}
+            </ul>
+          </article>
+        </section>
+
         <section className="content-grid">
           <nav className="queue" aria-label="Work queue">
             <div className="section-heading">
